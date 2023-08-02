@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    font-family: "Roboto", "Arial","sans-serif";
+    color: #333;
+}
+.menu nav{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+}
+.menu nav ul li{
+    list-style: none;
+    text-decoration: none;
+    /* color: black; */
+    display: none;
+    margin-right: 30px;
+}
+nav svg{
+    display: block;
+    font-size: 25px;
+    color: black;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+/* nav ul svg{
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+} */
+
+
+/* for the container  */
+#container{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),url(../images/contactpage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 5px;
+}
+.header-container{
+    padding: 40px 40px;
+    height: 900px;
+    max-width: 700px;
+    margin: auto;
+    height: 100vh;
+}
+.container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    /* opacity: 0.5; */
+    border: 20px solid #2590f4;
+    padding: 10px 10px;
+    /* margin: 15px; */
+    height: 600px;
+    /* flex-wrap: wrap; */
+}
+.container-content h1, .container-content p, .container-content .btn{
+    margin-top: 25px;
+}
+.container-content .btn{
+    border: 0;
+    outline: none;
+    background-color: #2590f4;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+}
+.btn a{
+    text-decoration: none;
+    background-color: #2590f4;
+}
+.container .btn a:hover{
+    background-color: #5d8bb7;
+}
+
+
+/* section 1 */
+#section1{
+    margin: 0 10px;
+    padding: 30px 0;
+}
+.section1-container{
+    text-align: center;
+}
+.section1-container h1{
+    font-weight: 700;
+    font-size: 50px;
+    padding: 10px;
+}
+.section1-container p{
+    font-size: 25px;
+    font-weight: 500;
+    color: grey;
+    padding: 10px;
+}
+.section1-container form, .section1-container form label{
+    padding: 10px;
+}
+.section1-container form input{
+    padding: 10px;
+    width: 350px;
+    background-color: #b3b3b3;
+    border-color: #b3b3b3;
+}
+.section1-container form label{
+    padding: 15px;
+    font-size: 18px;
+}
+
+.section1-container form input::placeholder{
+    color: grey;
+    font-size: 18px;
+}
+form button{
+    border: 0;
+    outline: none;
+    background-color: #2590f4;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+/* section2 */
+#section2{
+    padding-top: 300px;
+}
+.section2-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2590f4;
+    margin: 10px;
+    height: 350px;
+}
+.boxes{
+    background-color: whitesmoke;
+    height: 400px;
+    width: 450px;
+    position: relative;
+    margin: 0 15px;
+    margin-top: -300px;
+    padding: 0 20px;
+}
+.svgs{
+    background-color: #2590f4;
+    padding: 20px;
+    color: aliceblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* text-align: center; */
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10%;
+    right: 40%;
+}
+.texts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+.texts .p1{
+    font-size: 25px;
+    color: #333;
+    padding: 10px;
+    letter-spacing: 0.5px;
+}
+.texts .p2, .texts .p3{
+    padding: 5px;
+}
+
+
+/* section3 */
+.about-end{
+    padding: 15px;
+}
+.about-end .p1, .about-end .p2{
+    background-color: grey;
+    color: black;
+    text-align: center;
+    height: 150px;
+    padding-top: 20px;
+}
+.about-end .p2 a{
+    color: #2590f4;
+}
+
+
+@media screen and (min-width: 1024px) {
+     .section2-container{
+        flex-direction: row;
+     }
+     .boxes{
+        margin-bottom: 10px;
+     }
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    /* header section */
+    .menu nav ul li{
+        display: inline-block;
+    }
+    nav svg{
+        display: none;
+    }
+}
